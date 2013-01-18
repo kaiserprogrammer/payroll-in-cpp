@@ -10,4 +10,5 @@ public:
   virtual Employee* getUnionMember(int memberId) =0;
   virtual void addUnionMember(Employee* member) =0;
   virtual void deleteMember(int memberId) =0;
+  virtual void deletePointer(Employee* e) =0;
 };

@@ -56,4 +56,8 @@ public:
   void deleteMember(int memberId) {
     members.erase(members.find(memberId));
   }
+
+  void deletePointer(Employee* e) {
+    // no deletion since it's an InMemoryDB
+  };
 };

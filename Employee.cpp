@@ -21,6 +21,12 @@ public:
   Employee(std::string name, std::string address)
     : name(name),
       address(address) {};
+  ~Employee() {
+    delete(classification);
+    delete(schedule);
+    delete(method);
+    delete(affiliation);
+  };
 
   bool isPayday(date day) {
     schedule->isPayday(day);

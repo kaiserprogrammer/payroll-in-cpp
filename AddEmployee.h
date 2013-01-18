@@ -23,5 +23,6 @@ class AddEmployee : public Transaction
     employee->method = new HoldMethod();
     db->addEmployee(employee);
     empId = employee->empId;
+    db->deletePointer(employee);
   }
 };

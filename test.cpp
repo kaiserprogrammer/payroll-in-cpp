@@ -85,6 +85,7 @@ void change_address_test() {
   cat.execute();
 
   Employee* e = db.getEmployee(t.empId);
+  assert(e != NULL);
   assert(e->address == "Home");
 }
 
